@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<input id="demo" value="nhapA">
+<button type="button" onclick="checkA()">check</button>
+<p id="result"></p>
+<script>
+    function checkA(){
+        let a = parseInt(document.getElementById("demo").value);
+        let t = '';
+        for (let i = 0;i <= a;i++){
+            t = t + '+' +i
+        }
+    document.getElementById("result").innerText = eval(t);
+    }
+
+</script>
+</body>
+</html>
